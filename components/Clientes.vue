@@ -7,7 +7,7 @@
             <h3 class="mt-6 text-gray-900 text-sm font-medium">{{ client.name }}</h3>
             <dl class="mt-1 flex-grow flex flex-col justify-between">
                 <dt class="sr-only">Title</dt>
-                <dd class="text-gray-500 text-sm">{{ client.text }}</dd>
+                <dd v-if="client.text" class="text-gray-500 text-sm">{{ client.text }}</dd>
                 <dt class="sr-only">Role</dt>
                 <div class="mt-3">
                 <a :href="client.link" target="blank" class="px-2 py-1 text-green-800 text-xs font-medium bg-green-100 rounded-full">{{ client.name }}</a>
@@ -67,6 +67,11 @@ export default {
                     name: "AUDEPP",
                     link: "http://www.audepp.org/portal/",
                     text: "AUDEPP Asociación Uruguaya de Psicoterapia Psicoanalítica.",
+                },
+                {
+                    img: 'https://st2.depositphotos.com/4060975/8056/v/600/depositphotos_80565530-stock-illustration-plus-vector-icon.jpg',
+                    name: "Ser el proximo!",
+                    link: "/contact",
                 }
             ]
         }
