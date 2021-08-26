@@ -2,6 +2,8 @@
   <div>
     <Nav />
     <TopSlider />
+    <Bienvenidos />
+    <Creamos />
   </div>
 </template>
 
