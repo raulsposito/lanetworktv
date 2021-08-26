@@ -3,7 +3,10 @@
     <Nav />
     <TopSlider />
     <Bienvenidos />
+    <Clientes />
     <Creamos />
+    <SobreLaNetworkTv />
+    <Footer />
   </div>
 </template>
 

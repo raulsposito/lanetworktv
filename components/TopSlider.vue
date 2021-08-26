@@ -8,7 +8,9 @@
                 :per-page="1"
                 :mouse-drag="false"
                 :pagination-enabled="false"
-                :navigation-enabled="false"
+                :navigation-enabled="true"
+                navigationNextLabel="▶"
+                navigationPrevLabel="◀"
                 :autoplay="true"
                 :loop="true"
                 :speed="2000"
@@ -27,7 +29,7 @@
                     <div class="relative inset-0 z-10">
                         <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
                             <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">{{ image.text }}</h1>
-                            <p class="mt-6 text-xl text-indigo-100 max-w-3xl">{{ image.undertext }}</p>
+                            <p class="mt-6 text-xl text-gray-100 max-w-3xl">{{ image.undertext }}</p>
                         </div>
                     </div>
                     <div class="absolute inset-0 z-5">
