@@ -1,24 +1,28 @@
 <template>
-    <ul role="list" class="grid grid-cols-1 pb-16 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-    <div v-for="(client, index) in clients" :key="client.name" :index="index">
-        <li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200">
-            <div class="flex-1 flex flex-col p-8">
-            <img class="w-32 h-32 object-contain flex-shrink-0 mx-auto rounded-full" :src="client.img" alt="">
-            <h3 class="mt-6 text-gray-900 text-sm font-medium">{{ client.name }}</h3>
-            <dl class="mt-1 flex-grow flex flex-col justify-between">
-                <dt class="sr-only">Title</dt>
-                <dd v-if="client.text" class="text-gray-500 text-sm">{{ client.text }}</dd>
-                <dt class="sr-only">Role</dt>
-                <div class="mt-3">
-                <a :href="client.link" target="blank" class="px-2 py-1 text-green-800 text-xs font-medium bg-green-100 rounded-full">{{ client.name }}</a>
+    <div>
+        <p class="mt-1 pb-10 text-3xl text-center font-extrabold text-gray-900 sm:text-4xl sm:tracking-tight lg:text-5xl">Clientes destacados:</p>
+        <ul role="list" class="grid grid-cols-1 pb-16 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div v-for="(client, index) in clients" :key="client.name" :index="index">
+            <li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200">
+                <div class="flex-1 flex flex-col p-8">
+                <div v-if="client.img"><img class="w-32 h-32 object-contain flex-shrink-0 mx-auto rounded-full" :src="client.img" alt=""></div>
+                <div v-else><p class="p-6 text-7xl font-medium">+</p></div>
+                <h3 class="mt-6 text-gray-900 text-sm font-medium">{{ client.name }}</h3>
+                <dl class="mt-1 flex-grow flex flex-col justify-between">
+                    <dt class="sr-only">Title</dt>
+                    <dd v-if="client.text" class="text-gray-500 text-sm">{{ client.text }}</dd>
+                    <dt class="sr-only">Role</dt>
+                    <div class="mt-3">
+                    <a :href="client.link" target="blank" class="px-2 py-1 text-green-800 text-xs font-medium bg-green-100 rounded-full">{{ client.name }}</a>
+                    </div>
+                </dl>
                 </div>
-            </dl>
-            </div>
-        </li>
-    </div>
+            </li>
+        </div>
 
-    <!-- More people... -->
-    </ul>
+        <!-- More people... -->
+        </ul>
+    </div>
 </template>
 
 <script>
@@ -69,7 +73,6 @@ export default {
                     text: "AUDEPP Asociación Uruguaya de Psicoterapia Psicoanalítica.",
                 },
                 {
-                    img: 'https://st2.depositphotos.com/4060975/8056/v/600/depositphotos_80565530-stock-illustration-plus-vector-icon.jpg',
                     name: "Ser el proximo!",
                     link: "/contact",
                 }
