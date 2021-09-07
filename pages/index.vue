@@ -2,9 +2,8 @@
   <div>
     <TopSlider />
     <Bienvenidos />
-    <Clientes />
     <Creamos />
-    <SobreLaNetworkTv />
+    <Clientes />
   </div>
 </template>
 

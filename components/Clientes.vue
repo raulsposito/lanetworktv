@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="pt-24">
         <p class="mt-1 pb-10 text-3xl text-center font-extrabold text-gray-900 sm:text-4xl sm:tracking-tight lg:text-5xl">Clientes destacados:</p>
         <ul role="list" class="grid grid-cols-1 pb-16 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <div v-for="(client, index) in clients" :key="client.name" :index="index">

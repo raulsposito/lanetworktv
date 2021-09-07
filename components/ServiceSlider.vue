@@ -58,22 +58,20 @@ export default {
         return {
             images: [
                 {
-                    index: 0,
-                    url: require('../assets/slider1.png'),
-                    text: 'Donde el arte se junta con la tecnología',
-                    undertext: 'Efectos visuales y creativos',
+                    index: 3,
+                    url: require('../assets/filmSet1.jpg')
                 },
                 {
-                    index: 1,
-                    url: require('../assets/slider2.png'),
-                    text: 'Ideas transformadas en realidad',
-                    undertext: 'Soluciones Audio Visuales',
+                    index: 4,
+                    url: require('../assets/filmSet2.jpg')
                 },
                 {
-                    index: 2,
-                    url: require('../assets/slider3.png'),
-                    text: 'Fusión de pasión y profesionalismo',
-                    undertext: 'Desarrollos creativos y funcionales',
+                    index: 5,
+                    url: require('../assets/filmSet3.jpg')
+                },
+                {
+                    index: 6,
+                    url: require('../assets/filmSet4.jpg')
                 },
             ]
         }
