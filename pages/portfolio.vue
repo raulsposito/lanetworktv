@@ -180,7 +180,7 @@ export default {
 
             // let state = Flip.getState(image);
 
-            lastClickedCard.appendChild(image);
+            lastClickedCard.appendChild(image)
 
             // Flip.from(state, {
             //     duration: 0.6,
@@ -195,6 +195,12 @@ export default {
             let image = e.target.querySelector("img");
 
             // let state = Flip.getState(image);
+
+            gsap.to(image, {
+                ease: 'power1',
+                duration: 1.2,
+                y: 100
+            })
 
             header.appendChild(image);
 
